@@ -37,16 +37,3 @@ exports.register = async (req, res) => {
 
   //logout user
 
-exports.logout=catchAsyncErrors(async(req,res,next)=>{
-
-    
-    
-  res.cookie('token',null,{
-   expires: new Date(Date.now()),
-   httpOnly:true,
-   });
-res.status(200).json({
-   sucess:true,
-   message:"Logged Out"
-})
-})

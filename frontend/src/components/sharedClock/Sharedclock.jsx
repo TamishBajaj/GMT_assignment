@@ -10,7 +10,7 @@ const Sharedclock = () => {
   
     useEffect(() => {
       const fetchConfig = async () => {
-        const response = await axios.get(`http://localhost:3000/api/v1/config/load-config/${id}`);
+        const response = await axios.get(`${process.env.REACT_APP_BASE_URL}/config/load-config/${id}`);
         setConfig(response.data);
       };
       fetchConfig();

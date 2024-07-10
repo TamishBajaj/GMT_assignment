@@ -36,7 +36,7 @@ const Mainclock = () => {
 
   const saveConfig = async () => {
     try {
-      const response = await axios.post('http://localhost:3000/api/v1/config/save-config', { speed, timestamp: initialTime });
+      const response = await axios.post(`${process.env.REACT_APP_BASE_URL}/config/save-config`, { speed, timestamp: initialTime });
       setConfigId(response.data);
     } catch (error) {
       console.error("Error saving config:", error);

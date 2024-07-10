@@ -1,0 +1,135 @@
+.landing_mainss{
+    height: 100vh;
+    width: 100%;
+
+    background-image: url('../../assets/burger1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing_box{
+    display: flex;
+    flex-direction: column;
+    background-color: #FE8C00;
+    align-items: center;
+    color: white;
+    width: 311px;
+    height: 400px;
+    margin-top: 90px;
+
+    /* margin-top: 100px; */
+    border-radius: 48px;
+
+    margin-bottom: 40px;
+    
+   
+    
+    
+}
+
+.landing_box h2{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.main_head{
+    margin-top: 30px;
+}
+
+.details{
+    font-size: 14px;
+}
+
+.dtl{
+    margin-top: 10px;
+}
+
+.active_light{
+    display: flex;
+    gap: 10px;
+}
+
+.line{
+    width: 24px;
+    height:6px ;
+    background-color: #C2C2C2;
+    border-radius: 100px;
+    margin-top: 15px;
+}
+
+.light_liness3{
+    background-color: white;
+}
+
+.landing_footers{
+    height: 62px;
+    width: 62px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 2; /* Ensure it stays above the pseudo-element */
+}
+
+.landing_footer p{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.icns{
+    font-size: 2rem;
+    margin-left: 15px;
+    margin-top: 15px;
+    color: #FE8C00;
+
+}
+
+.icnns{
+    display: flex;
+    gap: 5px;
+}
+
+.big_line{
+    width: 134px;
+    height: 5px;
+    background-color: white;
+    
+}
+
+/* .outer_ring{
+    border: 4px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 10px;
+   
+} */
+.outer_ring {
+    position: relative;
+    width: 86px; /* Adjust size as needed */
+    height: 86px; /* Adjust size as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: conic-gradient(white 0% 75%, orange 75% 100%);
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.outer_ring::before {
+    content: '';
+    position: absolute;
+    top: 4px; /* Adjust this value to control border thickness */
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    border-radius: 50%;
+    background: #FE8C00; /* Match the background of the inner ring */
+}
+
+.icns:hover{
+    cursor: pointer;
+}

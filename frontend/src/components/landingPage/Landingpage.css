@@ -1,0 +1,103 @@
+.landing_main{
+    height: 100vh;
+    width: 100%;
+
+    background-image: url('../../assets/burger2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing_box{
+    display: flex;
+    flex-direction: column;
+    background-color: #FE8C00;
+    align-items: center;
+    color: white;
+    width: 311px;
+    height: 400px;
+    margin-top: 90px;
+
+    /* margin-top: 100px; */
+    border-radius: 48px;
+
+    margin-bottom: 40px;
+    
+   
+    
+    
+}
+
+.landing_box h2{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.main_head{
+    margin-top: 30px;
+}
+
+.details{
+    font-size: 14px;
+}
+
+.dtl{
+    margin-top: 10px;
+}
+
+.active_light{
+    display: flex;
+    gap: 10px;
+}
+
+.line{
+    width: 24px;
+    height:6px ;
+    background-color: #C2C2C2;
+    border-radius: 100px;
+    margin-top: 15px;
+}
+
+.light_line1{
+    background-color: white !important; 
+}
+
+.landing_footer{
+    display: flex;
+    justify-content: space-between;
+   gap: 170px;
+   margin-top: 65px;
+}
+
+.landing_footer p{
+    font-size: 14px;
+    font-weight: 600;
+}
+.landing_footer p:hover{
+    cursor: pointer;
+}
+
+.icn{
+    font-size: 1.2rem;
+    margin-top: 3px;
+}
+
+.icnns{
+    display: flex;
+    gap: 5px;
+}
+
+.big_line{
+    width: 134px;
+    height: 5px;
+    background-color: white;
+    
+}
+
+.next_btn:hover{
+    cursor: pointer;
+}

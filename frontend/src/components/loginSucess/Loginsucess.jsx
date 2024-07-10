@@ -14,7 +14,7 @@ const Loginsucess = () => {
   }
 
   const ret=()=>{
-    navigate('login')
+    navigate('/login')
   }
   return (
     <div className='sucess_main'>

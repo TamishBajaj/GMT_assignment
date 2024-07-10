@@ -124,6 +124,11 @@
 
 @media  screen and (max-width:810px) {
 
+    .heads{
+        height: auto;
+        padding-bottom: 20px;
+    }
+
     .outr_bx{
         display: flex;
         flex-direction: column;

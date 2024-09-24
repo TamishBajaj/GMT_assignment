@@ -6,6 +6,7 @@ import connectDB from './db/connect.js';
 // const users=require('./routes/auth')
 
 import userRouter from './routes/user.routes.js';
+import cookieParser from 'cookie-parser';
 
 // import notFound from './middleware/notFound.js';
 // import errorHandlerMiddleware from './middleware/errorHandler.js'
@@ -17,10 +18,14 @@ import dotenv from 'dotenv';
 dotenv.config();
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    // origin: 'http://your-frontend-url.com', // Your frontend's domain
+    credentials: true // Allow sending cookies with requests
+  }));
 
 // Middleware
 app.use(express.json());
+app.use(cookieParser());
 
 // Routes
 // app.use('/api/v1/config', clockRoutes);
